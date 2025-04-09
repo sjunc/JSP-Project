@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form method = "post" action = "Login.jsp">
+    <div>
+    <label for = "userId">아이디</label>
+    <input id = "userID" type = "text" name = "userID"/>
+    </div>
+    <div>
+    <label for = "userPassword">비밀번호</label>
+    <input id = "userPassword" type ="password" name = "userPassword"/>
+    </div>
+    <div>
+        <button type ="submit">로그인</button>
+    </div>
+    <div>
+        <label for = "saveUserId">
+        <input type = "checkbox"/> 아이디 저장
+        </label>
+    </div>
+    <select name = "year">
+        <option value = "2025">2025년도</option>
+        <option value = "2024">2024년도</option>
+    </select>
+</form>
+    가장 간단한 방법 br 대부분 div 사용
+    form으로 전체를 감싸주고 method를 설정해줘야함<br>
+    name이 있어야지 전송이 됨. 
+    get 방식은 보안이 안되니 로그인은 post로 해줘야함.
+</body>
+</html>
