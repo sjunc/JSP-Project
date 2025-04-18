@@ -1,0 +1,58 @@
+내장 객체
+
+page 영역
+pageScope 
+
+request 영역
+
+session 영역
+내 하나의 접속(ex | 로그인)에 대한 정보 
+
+application 영역
+톰캣이 살아있을 때 가지고 있는 정보. 공통적인 부분 
+
+객체가 갖는 것: 속성과 메소드 
+
+내장 객체 
+set/get은 map 형태로 데이터를 가져옴. 
+setAttribute(ㅁ, ㅁ)
+정할 때는 키와 값 모두를 설정
+getAttribute (ㅁ)
+가져올 때 키만 가지고 가져옴. 
+
+DTO (Data Transfer Object) VO (Value Object) Model 
+데이터를 저장하거나 전송하는데 쓰이는 객체
+자바빈스 규약에 따라 작성 : 1. 기본 패키지 이외의 패키지, 2. 속성 접근 디덜자 private으로 선언 3. 기본 생성자 4. getter/setter로 접근 5. 게터/세터 메서드의 접근 지정자는 public으로 선언 
+
+
+Java     -> 클래스   -> [    ].java 
+(oop)	  (추상화)      소스 파일       (서비스, Dao레퍼지토리, 유틸리티, 서블릿) 그 중 데이터를 저장하는 용도 = DTO
+
+page 
+페이지 벗어나면사라짐
+application
+한번 저장되면 웹 어플이 꺼질 때까지 유지되지만 잘 쓰지 않음.
+session 
+브라우저 마다 ID가 달라짐, 새로 고침해도 ID가 바뀌진 않음. 
+F12 application cookie 값을 지우면 값이 초기화됨. 클라이언트 저장 
+개인정보를 주로 세션에 저장하게 됨. 
+
+
++
+
+cookie (4장)
+서버와 클라이언트에 남음. 
+
+id저장, 팝업 제거
+
+제약이 존재 (갯수, 용량) 
+쿠키객체를 만들어서 값을 setValue, getValue 할 수 있음. 
+
+
+
+
+단답형 50문제 
+1~2장 + 3장 (클라이언트가 처리하는 객체가 뭐냐 = request)
+코드 하나 출력
+
+
